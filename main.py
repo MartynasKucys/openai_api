@@ -130,7 +130,6 @@ def make_call(description, category,  section, output):
     output[category] = {}
     
     for sub_category in section.keys():
-        print(f"making call on {category}-{sub_category}")
         try:
             r = openai.ChatCompletion.create(
                 model = "gpt-3.5-turbo",
@@ -153,15 +152,13 @@ def make_call(description, category,  section, output):
             )
         except Exception as e:
             return f'An error has occurred with open ai servers: </br> {str(e)}'
-        print(f"done {category}-{sub_category}")
-
 
         variants = []
         for choice in r["choices"]:
             c = choice["message"]["content"]
             c = c.strip("\'")
             c = c.strip("\"")
-        variants.append(c)
+            variants.append(c)
     
         output[category][sub_category] = variants        
     

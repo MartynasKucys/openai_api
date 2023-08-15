@@ -85,18 +85,19 @@ It returns:
 {
   "about": {
     "title": [
-      "Indulge in Frozen Delights: Discover the Story Behind Our Chilled Creations"
+      "The Scoop: Discover Our Delicious Frozen Creations and Sweet Indulgences",
+      "Indulge in Blissful Delights: Unveiling the Frosty Delights of Our Artisanal Ice Cream Shop"
     ],
     "description": [
-      "Welcome to our extraordinary ice cream shop, where every scoop is a delightful masterpiece. Indulge your taste buds in a world of delectable flavors crafted with the finest ingredients and a sprinkle of magic. Our passion for creating frozen delights knows no bounds, as we constantly push the boundaries of conventional ice cream. From classic favorites to innovative creations, we offer an extensive selection to satisfy any craving. Whether you're seeking a nostalgic treat or a bold new adventure, our ice cream shop promises to transport you to a place of unparalleled sweetness and joy. Come and experience the blissful world of ice cream perfection."
+      "Welcome to our delightful ice cream haven! Our ice cream shop is a dreamy paradise for all ice cream enthusiasts. Indulge in our handcrafted frozen treats that will transport your taste buds to a world of pure bliss. Each scoop is made with love and passion, using only the finest ingredients, ensuring the smoothest, creamiest ice cream experience. From classic flavors to exotic creations, there's something to satisfy every craving. With our charming ambiance and friendly service, we aim to create unforgettable moments and spread joy one scoop at a time. Come and join us for a delightful journey through the wonders of ice cream."
     ]
   },
   "refund": {
     "title": [
-      "Sweet Satisfaction Guaranteed: Ice Cream Shop Refunds Made Easy!"
+      "Sweet Satisfaction Guaranteed: Our Hassle-Free Ice Cream Refund Policy"
     ],
     "description": [
-      "Welcome to our ice cream shop's refund page! We believe in serving pure happiness with every scoop, but if your experience falls short of expectations, we're here to make it right. Our refund policy is as sweet as our tantalizing flavors. Whether you didn't get the exact flavor you were craving or encountered any issues, simply reach out to our friendly customer support team. With their expert assistance, we'll ensure your satisfaction is restored. Your delight is our top priority, because every customer deserves an ice cream experience that's as delightful as can be."
+      "Welcome to our ice cream shop's refund page, where your satisfaction is our top priority! We understand that sometimes things don't go as planned, and we're here to make it right. If you're not 100% satisfied with your ice cream experience, we offer a hassle-free refund process. Simply reach out to our friendly team within [X] days of your purchase, and we'll gladly assist you. Whether it's an issue with the flavor, texture, or any other concern, we're committed to ensuring that every scoop brings a smile to your face. Your happiness is the cherry on top of our ice cream!"
     ]
   }
 }
