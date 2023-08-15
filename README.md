@@ -1,38 +1,38 @@
-# Open ai api
+# OpenAI API
 
-In this repo there is an flask api that calls open ai gpt-3.5-turbo and rephrases or generated text. Due to the fact that
-there can be a lot of section to the generate api call all section in parallel.
+In this repo, there is a Flask API that calls OpenAI's GPT-3.5-Turbo to rephrase or generate text. Due to the possibility of having multiple sections in the API call, all sections are called in parallel.
 
 ## How to launch
 
-Build docker image
+Build the docker image:
 
 ```bash
 docker build -t openai_api .
 ```
 
-After run the image
+Afterwards, run the image:
 
 ```bash
 docker run -p 5000:5000 openai_api
 ```
 
-This will run the flask api on localhost:5000.
+This will run the Flask API on localhost:5000.
 
-There is also an .env file with "openai_key" that is your open ai api key and "api_key" that is the key for this api (by default "api_key")
+There is also an .env file with "openai_key", which is your OpenAI API key, and "api_key" which is the key for this API (by default "api_key").
 
-## Using the api
+## Using the API
 
-### The /Rephrase api
+### The /Rephrase API
 
-It expects json with text and number of variants that you want to rephrase. </br>
-example json.
+It expects JSON with text and a number of variants you want to rephrase.
+
+Example JSON:
 
 ```json
 { "text": "some text to rephrase", "number_of_variants": 2 }
 ```
 
-You can call this function with programs like postman or curl. You can use this curl command.
+You can call this function with programs like Postman or curl. You can use this curl command:
 
 ```bash
 curl -X GET http://localhost:5000/Rephrase -H "Content-Type: application/json" -H "Authorization: Bearer api_key" --data "{\"text\": \"This product is very very good \", \"number_of_variants\":2}"
@@ -44,9 +44,9 @@ It will return:
 ["This product is extremely excellent.", "This product is excellent."]
 ```
 
-### the /Generate api
+### The /Generate API
 
-It expects description about the company and then sections about what pages and what inside thous page to generate.
+It expects a description of the company, followed by sections detailing the pages and the content inside those pages to generate.
 
 ```json
 {
@@ -59,8 +59,9 @@ It expects description about the company and then sections about what pages and 
 }
 ```
 
-The number represent how many variations of that this it should generate. </br>
-For example if you pass this json
+The numbers represent how many variations it should generate for each item.
+
+For example, if you pass this JSON:
 
 ```json
 {
@@ -76,7 +77,6 @@ With this curl command:
 
 ```bash
 curl -X GET http://localhost:5000/Generate -H "Content-Type: application/json" -H "Authorization: Bearer api_key" --data "{\"description\": \"An ice cream shop \", \"sections\":{ \"about\": {\"title\":2, \"description\":1}, \"refund\":{\"title\":1, \"description\":1} } } "
-
 ```
 
 It returns:
