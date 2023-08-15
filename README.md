@@ -82,6 +82,22 @@ curl -X GET http://localhost:5000/Generate -H "Content-Type: application/json" -
 It returns:
 
 ```json
-{"about": {"title": ["Indulge in Frozen Delights: Experience the Ultimate Ice Cream Haven"], "description": ["Welcome to our extraordinary ice cream shop, where every scoop is a delightfully decadent experience. Indulge your senses in our handcrafted, artisanal ice creams that are made with love and care. Our luscious flavors range from classic favorites like creamy vanilla bean and rich chocolate, to tantalizing creations such as salted caramel swirl and refreshing berry blast. We source only the finest ingredients to ensure each bite is a burst of pure bliss. Whether you're celebrating a special occasion or simply satisfying your sweet tooth, our ice cream shop is the ultimate destination for pure frozen enchantment. Explore a world of sweet sensations with us today!"]}, "refund": {"title": ["Chill Out and Refund \u2013 Satisfying Your
-Sweet Tooth, One Scoop at a Time!"], "description": ["Welcome to our Ice Cream Shop's refund page! We genuinely believe that our delicious ice cream will delight your taste buds, but we understand that sometimes mistakes happen or preferences change. If you are unsatisfied, don't worry, we've got you covered. Our refund policy ensures your satisfaction is our top priority. Whether you accidentally ordered the wrong flavor or simply changed your mind, we'll gladly assist you with a hassle-free refund. Our dedicated customer support team is here to make sure you leave with a smile on your face and a satisfied palate. Your happiness and enjoyment are what we strive for, and we can't wait to serve you again soon!"]}}
+{
+  "about": {
+    "title": [
+      "Indulge in Frozen Delights: Discover the Story Behind Our Chilled Creations"
+    ],
+    "description": [
+      "Welcome to our extraordinary ice cream shop, where every scoop is a delightful masterpiece. Indulge your taste buds in a world of delectable flavors crafted with the finest ingredients and a sprinkle of magic. Our passion for creating frozen delights knows no bounds, as we constantly push the boundaries of conventional ice cream. From classic favorites to innovative creations, we offer an extensive selection to satisfy any craving. Whether you're seeking a nostalgic treat or a bold new adventure, our ice cream shop promises to transport you to a place of unparalleled sweetness and joy. Come and experience the blissful world of ice cream perfection."
+    ]
+  },
+  "refund": {
+    "title": [
+      "Sweet Satisfaction Guaranteed: Ice Cream Shop Refunds Made Easy!"
+    ],
+    "description": [
+      "Welcome to our ice cream shop's refund page! We believe in serving pure happiness with every scoop, but if your experience falls short of expectations, we're here to make it right. Our refund policy is as sweet as our tantalizing flavors. Whether you didn't get the exact flavor you were craving or encountered any issues, simply reach out to our friendly customer support team. With their expert assistance, we'll ensure your satisfaction is restored. Your delight is our top priority, because every customer deserves an ice cream experience that's as delightful as can be."
+    ]
+  }
+}
 ```
